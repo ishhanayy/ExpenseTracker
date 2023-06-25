@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+</head>
+<body>
+    <p style="height: 100px;"></p>
+    <div class="container">
+        <h3 style="text-align:center; font-style:normal; color: rgb(1, 61, 121);">Welcome to DeshBoard</h3>
+        <div class="col-xs-12" style="text-align:center; height: 500px; background-color: lightpink; border-radius: 10px; width: 300px; margin-left: 620px;">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                           <p style="height: 10px;"></p>
+                          <span class="card-title" style="font-size: 20px; font-weight: 200; font-style: normal; text-decoration: underline; background-color: cornsilk;">Net Balance</span>
+                          <p style="font-family: 20px;">View Balance</p>
+                          <div class="alert alert-primary" role="alert">
+                              Rs. {{netBls}}
+                          </div>
+                          <a href="allTransaction" class="btn btn-primary btn-sm">View All Transactions</a>
+                          <br>
+                           <hr>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Total Expense</h5>
+                          <p style="font-family: 20px;">View total expense here</p>
+                          <div class="alert alert-danger" role="alert">
+                              Rs. {{exp}} 
+                          </div>
+                          <a href="ShowExpense" class="btn btn-primary btn-sm">View All Expenses</a>
+                          <br>
+                          <hr>
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Total Income</h5>
+                          <p style="font-family: 20px;">View total income here</p>
+                          <div class="alert alert-success" role="alert">
+                              Rs. {{inc}}
+                          </div> 
+                          <a href="ShowIncome" class="btn btn-primary btn-sm">View All Incomes</a>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
