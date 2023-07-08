@@ -18,7 +18,7 @@ from django.urls import path
 from TrackingApp import views as v1
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', v1.home),
+    path('', v1.home),
     path('signup', v1.signup),
     path('login', v1.login),
     path('Dashboard', v1.Dashboard),
