@@ -15,8 +15,8 @@ def signup(req):
 def login(req):
     return render(req, 'login.html')
 
-def master(req):
-    return render(req, 'master.html')
+def index(req):
+    return render(req, 'index.html')
 
 def RenderIncome(req):
     return render(req, 'Income.html')
@@ -50,7 +50,7 @@ def RegisterUser(req):
     #obj.ProfilePic=req.GET.get('uploadProPic')
     obj.save()
     #return HttpResponse("data saved")
-    return redirect(master)
+    return redirect(index)
 
 def CheckloginUser(req):
     username=req.GET.get('email')
@@ -64,7 +64,7 @@ def CheckloginUser(req):
         req.session['uname']=list[0]['Email']
         #return HttpResponse("successful login")
         #return redirect("Dashboard")
-        return redirect(master)
+        return redirect(index)
     else:
         #return HttpResponse('username or password not correct')
         #messages.error(req,'username or password not correct')

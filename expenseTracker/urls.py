@@ -18,13 +18,13 @@ from django.urls import path
 from TrackingApp import views as v1
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', v1.home),
+    path('home', v1.home),
     path('signup', v1.signup),
     path('login', v1.login),
     path('Dashboard', v1.Dashboard),
     path('RegisterUser', v1.RegisterUser),
     path('CheckloginUser', v1.CheckloginUser),
-    path('master', v1.master),
+    path('', v1.index),
     path('SaveIncome', v1.SaveIncome),
     path('RenderIncome', v1.RenderIncome),
     path('ShowIncome', v1.ShowIncome),

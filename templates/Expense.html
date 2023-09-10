@@ -9,24 +9,78 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Income</title>
     <style>
-        #id1
-        {
+        body {
+            background-color: #fff; /* Change the background color */
+            font-family: Arial, sans-serif; /* Use a more common font */
+            margin: 0;
+            padding: 0;
+        }
+    
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    
+        .card {
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        .card-header {
             background-color: lightpink;
-            font-style:italic;
-            font-size: 16px;
-            padding: 4px 4px;
+            font-style: italic;
+            font-size: 24px;
+            padding: 20px;
             text-align: center;
-            border: 2px solid black;
-            margin-bottom: 2%;
-            width: 200px;
+            color: rgb(1, 61, 121);
+            border-bottom: 1px solid black;
+        }
+    
+        .card-body {
+            padding: 20px;
+        }
+    
+        .form-group {
+            margin-bottom: 15px;
+        }
+    
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        select {
+            height: 34px; /* Match the height with input fields */
+        }
+    
+        .signupbtn {
+            background-color: rgb(1, 61, 121);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        .signupbtn:hover {
+            background-color: #003399; /* Darker shade on hover */
         }
     </style>
+    
 </head>
 <body>
     <div class="container">
         <div class="d-flex justify-content-center h-100">
             <div class="card">
-                <div class="card-header" style="font-size: 50px; color: rgb(1, 61, 121);">
+                <div class="card-header" style="font-size: 27px; font-style: normal; display: flex; color: rgb(1, 61, 121);">
                     Save Expenses Details here
                 </div>
                 <div class="card-body">
