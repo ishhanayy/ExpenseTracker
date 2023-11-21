@@ -96,7 +96,8 @@ def ShowIncome(req):
             return render(req, 'ShowIncome.html', {'record':ListRecord})
         #else the uid means the id is not matching the saved ids in database
         else:
-            return redirect()
+            return redirect("login")
+
 
 def SaveExpense(req):
     if 'uid' in req.session:
@@ -123,7 +124,7 @@ def ShowExpense(req):
             return render(req, 'ShowExpense.html', {'record':ListRecord})
         #else the uid means the id is not matching the saved ids in database
         else:
-            return redirect()
+            return redirect('login')
 
 def allTransaction(req):
     if 'uid' in req.session:
