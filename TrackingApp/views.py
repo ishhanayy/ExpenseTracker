@@ -38,7 +38,7 @@ def Dashboard(req):
         netBalance=totalIncome-totalExpense
         return render(req,"Dashboard.html",{'netBls':netBalance,'exp':totalExpense,'inc':totalIncome})
     else:
-        return render(login)
+        return render(req, 'login.html')
 
 def RegisterUser(req):
     obj = User()
